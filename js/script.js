@@ -1,16 +1,12 @@
-var maleName=["Kwasi", "Kwadwo", "Kwabena", "Kwatu", "Yaw", "Koh", "Kwame"];
+var maleNames=["Kwasi", "Kwadwo", "Kwabena", "Kwatu", "Yaw", "Koh", "Kwame"];
 var femaleNames=["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa","Afua", "Ama"];
 var daysOfWeek=["Sunday", "Monday", "Tuesday", "Wenesday", "Thursday", "Friday", "Saturday"];
 
- // var day=parseInt(document.getElementById(day));
-  // var month=parseInt(document.getElementById(month));
-  // var year=parseInt(document.getElementById(year));
-  // var gender=document.getElementByClass(gender);
-
-  var day=10;
-  var month=10;
-  var year=2000;
-  var gender="female";
+function gettingAkanName (){
+  var day=parseInt(document.getElementById(day));
+  var month=parseInt(document.getElementById(month));
+  var year=parseInt(document.getElementById(year));
+  var gender=document.getElementByClass(gender);
   var validDate=(day>0 && day<=31 && month>0 && month<=12 && year>0);
   var validGender=(gender=="male" || gender=="female");
   if (day<0 || day>31){
@@ -32,10 +28,11 @@ var daysOfWeek=["Sunday", "Monday", "Tuesday", "Wenesday", "Thursday", "Friday",
     var date=new Date(year+"/"+month+"/"+day);
     var birthDay=date.getDay();
   }
-  if (gender=="female"){
+  if (gender=="male"){
     alert("You were born on "+daysOfWeek[birthDay]+" Your Akan name is "+maleNames[birthDay]);
   }
   else if (gender=="female"){
     alert("You were born on "+daysOfWeek[birthDay]+" Your Akan name is "+femaleNames[birthDay]);
   }
 }
+
