@@ -1,0 +1,42 @@
+.container {
+  background-image: url(./images/Canva-Women-in-Ghana-celebrate-independence-day-1536x1021.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position-x: center;
+  box-shadow: rgb(255, 255, 0, 0.5) 0 3000px inset;
+  color: black;
+}
+.col-mn-12 {
+  width: 100%;
+
+}
+.navbar-light {
+  width: 100%;
+  background-color: rgb(219, 14, 14, 0.7);
+}
+
+.navbar-nav {
+
+  margin-left: 50vw;
+}
+
+button {
+  margin-top: 7vh;
+  margin-left: 33vw;
+  margin-bottom: 5vh;
+}
+
+.nav-link {
+  color: yellow;
+}
+
+#contacts {
+  display: flex;
+  justify-content: space-between;
+  background-color: green;
+}
+
+h3 {
+  text-align: center;
+  text-decoration: underline red;
+}

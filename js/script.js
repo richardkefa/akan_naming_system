@@ -7,7 +7,14 @@ function gettingAkanName(){
   var month=parseInt(document.getElementById("month").value);
   var year=parseInt(document.getElementById("year").value);
   var gender=getSex();
-  
+  function getSex(){
+     var gender = document.getElementsByName("gender").value;
+     for(x=0; x < gender.length(); x++){
+       if (gender[x].checked) {
+          return(gender[x].value);
+        }
+    }
+  }
   var validDate=(day>0 && day<=31 && month>0 && month<=12 && year>0);
   var validGender=(gender=="male" || gender=="female");
   if (day<0 || day>31){
@@ -35,13 +42,6 @@ function gettingAkanName(){
   else if (gender=="female"){
     alert("You were born on "+daysOfWeek[birthDay]+" Your Akan name is "+femaleNames[birthDay]);
   }
-  function getSex(){
-    var gender = document.getElementsByName("gender").value;
-    for(x=0; x < gender.length(); x++){
-        if (gender[x].checked) {
-          return(gender[x].value);
-        }
-    }
-  }
 }
+
 
