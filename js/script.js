@@ -8,8 +8,8 @@ function gettingAkanName(){
   var year=parseInt(document.getElementById("year").value);
   var gender=getSex();
   function getSex(){
-     var gender = document.getElementsByName("gender").value;
-     for(x=0; x < gender.length(); x++){
+     let gender = document.getElementsByClassName("form-check-input").value;
+     for(x=0; x < gender.length; x++){
        if (gender[x].checked) {
           return(gender[x].value);
         }

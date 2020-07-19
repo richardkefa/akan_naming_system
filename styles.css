@@ -1,5 +1,5 @@
 .container {
-  background-image: url(./images/Canva-Women-in-Ghana-celebrate-independence-day-1536x1021.jpg);
+  background-image: url(./images/image-20160222-23457-1yifcg6.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-position-x: center;
@@ -33,7 +33,7 @@ button {
 #contacts {
   display: flex;
   justify-content: space-between;
-  background-color: green;
+  background-color: rgb(0, 128, 0, 0.5);
 }
 
 h3 {
