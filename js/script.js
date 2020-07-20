@@ -8,7 +8,7 @@ function gettingAkanName(){
   var year=parseInt(document.getElementById("year").value);
   var gender=getSex();
   function getSex(){
-     let gender = document.getElementsByClassName("form-check-input").value;
+     var gender = document.getElementsByName("gender");
      for(x=0; x < gender.length; x++){
        if (gender[x].checked) {
           return(gender[x].value);
@@ -35,13 +35,15 @@ function gettingAkanName(){
   else {
     var date=new Date(year+"/"+month+"/"+day);
     var birthDay=date.getDay();
+    if (gender=="male"){
+      alert("You were born on "+daysOfWeek[birthDay]+" Your Akan name is "+maleNames[birthDay]);
+    }
+    else if (gender=="female"){
+      alert("You were born on "+daysOfWeek[birthDay]+" Your Akan name is "+femaleNames[birthDay]);
+    }
   }
-  if (gender=="male"){
-    alert("You were born on "+daysOfWeek[birthDay]+" Your Akan name is "+maleNames[birthDay]);
-  }
-  else if (gender=="female"){
-    alert("You were born on "+daysOfWeek[birthDay]+" Your Akan name is "+femaleNames[birthDay]);
-  }
+  
+    document.getElementById("myForm").reset();
 }
 
 
