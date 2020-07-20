@@ -4,6 +4,7 @@
 
 ## Description 
 This is version !.0 of of the Akan naming system. Akan names were given debending on the gender and the day aperson was born. In the system you can get your akan name by giving your birthday date.
+https://richardkefa.github.io/akan_naming_system/
 
 ## User instructions 
 * Open the web page.
